@@ -1,0 +1,10 @@
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

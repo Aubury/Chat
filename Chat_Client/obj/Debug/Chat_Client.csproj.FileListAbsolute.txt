@@ -1,0 +1,10 @@
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\bin\Debug\Chat_Client.exe.config
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\bin\Debug\Chat_Client.exe
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\bin\Debug\Chat_Client.pdb
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.Form1.resources
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.Properties.Resources.resources
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.csproj.GenerateResource.Cache
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.csproj.CoreCompileInputs.cache
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.exe
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.pdb
+D:\ПРОГРАММИРОВАНИЕ\4_семестр\Сетевое программирование\4_УРОК\Экзамен\Chat\Chat_Client\obj\Debug\Chat_Client.csprojResolveAssemblyReference.cache

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.chatTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.labelColor = new System.Windows.Forms.Label();
@@ -41,22 +40,9 @@
             this.send_button = new System.Windows.Forms.Button();
             this.labelSmile = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.chatTextBox = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chatTextBox
-            // 
-            this.chatTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.chatTextBox.Location = new System.Drawing.Point(3, 3);
-            this.chatTextBox.Multiline = true;
-            this.chatTextBox.Name = "chatTextBox";
-            this.chatTextBox.Size = new System.Drawing.Size(354, 204);
-            this.chatTextBox.TabIndex = 0;
-            this.chatTextBox.TextChanged += new System.EventHandler(this.chatTextBox_TextChanged);
             // 
             // nameTextBox
             // 
@@ -166,30 +152,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // panel1
+            // chatTextBox
             // 
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.chatTextBox);
-            this.panel1.Location = new System.Drawing.Point(26, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 210);
-            this.panel1.TabIndex = 14;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.chatTextBox.Location = new System.Drawing.Point(32, 22);
+            this.chatTextBox.Name = "chatTextBox";
+            this.chatTextBox.Size = new System.Drawing.Size(354, 210);
+            this.chatTextBox.TabIndex = 13;
+            this.chatTextBox.Text = "";
+            this.chatTextBox.TextChanged += new System.EventHandler(this.chatTextBox_TextChanged_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 331);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.chatTextBox);
             this.Controls.Add(this.messageTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelSmile);
@@ -206,17 +183,12 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox chatTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelColor;
@@ -229,8 +201,7 @@
         private System.Windows.Forms.Button send_button;
         private System.Windows.Forms.Label labelSmile;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.RichTextBox chatTextBox;
     }
 }
 

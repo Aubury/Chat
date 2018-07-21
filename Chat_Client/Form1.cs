@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -16,8 +17,8 @@ namespace Chat_Client
         static TcpClient client;
         static NetworkStream stream;
         ColorDialog color;
-        Image img;
-
+        public  Image img { set; get; }
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,8 +27,8 @@ namespace Chat_Client
             sineINbutton.Enabled = true;
             sineOUTbutton.Enabled = false;
             send_button.Enabled = false;
-           // img.Size = new Size(16, 16);
-        
+       
+
 
       
            
@@ -49,8 +50,7 @@ namespace Chat_Client
 
         private void ReceiveMessage()
         {
-           // chatTextBox.TextAlign = HorizontalAlignment.Left;
-
+        
             
             while (true)
             {
@@ -73,7 +73,7 @@ namespace Chat_Client
 
                     this.Invoke(new MethodInvoker(() =>
                     {
-                      chatTextBox.TextAlign = HorizontalAlignment.Right;
+                      //chatTextBox.TextAlign = HorizontalAlignment.Right;
 
                         string time_message_out = DateTime.Now.ToShortTimeString();
                         chatTextBox.Text+= time_message_out + " : " + message + "\r\n" + chatTextBox.Text;
@@ -129,7 +129,8 @@ namespace Chat_Client
 
             chatTextBox.ForeColor = color.Color;
             colorTextBox.ReadOnly = true;
-            img = pictureBox1.Image;
+            img = pictureBox1.Image; 
+ 
 
             sineINbutton.Enabled = false;
             sineOUTbutton.Enabled = true;
@@ -149,10 +150,10 @@ namespace Chat_Client
                 Thread receiveThread = new Thread(new ThreadStart(ReceiveMessage));
                 receiveThread.Start();
 
-                chatTextBox.TextAlign = HorizontalAlignment.Left;
-                chatTextBox.Text = ($" Добро пожаловать {userName} в нашем чате!\r\n");
+                
+                chatTextBox.Text = ($"  Добро пожаловать {userName} в нашем чате!\r\n\r\n");
               
-                 // SendMessage();
+             
 
             }
             catch (Exception ex) 
@@ -174,8 +175,8 @@ namespace Chat_Client
                 string time_message_out = DateTime.Now.ToShortTimeString();
 
                 
-                chatTextBox.TextAlign = HorizontalAlignment.Left;
-                chatTextBox.Text += time_message_out+"\r\n"+ message + "\r\n";
+               
+                chatTextBox.Text += time_message_out+"\r\n"+ message + "\r\n\r\n";
                 messageTextBox.Clear();
                 
             }
@@ -223,18 +224,13 @@ namespace Chat_Client
             chatTextBox.ForeColor = color.Color;
         }
 
-       
+  //------------------------------------------------------------------------------------------------------------------------     
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //for (int i = 0; i < imageList1.Images.Count; i++)
-            //{
-            //    ListViewItem item = new ListViewItem();
-            //    item.ImageIndex = i;
-            //    listView.Items.Add(item);
-            //}
+      
         }
-
+//---------------------------------------------------------------------------------------------------------------------------
         int click = 0;
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -265,27 +261,39 @@ namespace Chat_Client
 
             }
         }
-
-      
-
-
-
-
-
-        public static Image ScaleImage(Image img)
+//---------------------------------------------------------------------------------------------------------------
+  public static Image ScaleImage(Image img)
         {
-            if (img.Height == 16)
+            if (img.Height == 2)
             {
                 return img;
             }
             else
             {
-                return new Bitmap(img, new Size((int)((img.Height / 16.0) * img.Width), 16));
+                return new Bitmap(img, new Size((int)((img.Height / 2.0) * img.Width), 2));
             }
         }
+//----------------------------------------------------------------------------------------------------------------
+private void SetIcons()
+        {
+            chatTextBox.ReadOnly = false;
+            Bitmap bitmap = new Bitmap(pictureBox1.Image, new Size(20,20));
+            
+            Clipboard.SetImage(bitmap);
+            DataFormats.Format format = DataFormats.GetFormat(DataFormats.Bitmap);
+
+            chatTextBox.Paste(format);
+            Clipboard.Clear();
+
+        }
+//----------------------------------------------------------------------------------------------------------
+        private void chatTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            ScaleImage(pictureBox1.Image);
+            SetIcons();
 
 
-
+        }
 
 
         //------------------------------------------------------------------------------------------------------
